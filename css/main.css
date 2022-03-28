@@ -14,36 +14,71 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
-.container {
-    margin: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-@media (min-width: 768px) {
-    .container {
-        width: 750px;
-    }
-}
-
-@media (min-width: 992px) {
-    .container {
-        width: 970px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .container {
-        width: 1170px;
-    }
-}
-
 /* End Global Rules */
 
 /* Start Variables */
+
+:root {
+    --main-colorone: #ed6436;
+    --main-colortwo: #65c178;
+}
+
 /* End Variables */
 
 /* Start Components */
 /* End Components */
+
+/* Start Top bar */
+
+.top-bar {
+    background-color: var(--main-colortwo , #65c178);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 991px) {
+    .top-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.top-bar .help {
+    display: flex;
+    margin-left: 20px;
+}
+
+@media (max-width: 991px) {
+    .top-bar .help {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+
+.top-bar .help a {
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+    display: block;
+}
+
+.top-bar .help a:hover {
+    text-decoration: underline;
+}
+
+.top-bar .help span {
+    height: 15px;
+    width: 2px;
+    background-color: white;
+    display: block;
+    margin-right: 20px;
+}
+
+.top-bar .socials i {
+    color: white;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+/* End Top bar */
