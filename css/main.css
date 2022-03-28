@@ -82,3 +82,65 @@ body {
 }
 
 /* End Top bar */
+
+/* Start Working Hours */
+
+.work {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+@media (max-width: 991px) {
+    .work {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.work .logo {
+    font-size: 39px;
+    font-weight: 800;
+    color: var(--main-colorone , #ed6436);
+}
+
+@media (max-width: 991px) {
+    .work .logo {
+        display: none;
+    }   
+}
+
+.work .logo span {
+    color: black;
+}
+
+.work .hours {
+    display: flex;
+}
+
+.work .hours .col {
+    border-right: 1px solid #dee2e6;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.work .hours .col:last-of-type {
+    border-right: none;
+}
+
+.work .hours .col:nth-child(2) {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.work .hours .col h6 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #181818;
+}
+
+.work .hours .col p {
+    opacity: 0.2;
+}
+
+/* End Working Hours */
