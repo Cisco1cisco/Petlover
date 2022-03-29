@@ -22,6 +22,7 @@ body {
     --main-colorone: #ed6436;
     --main-colortwo: #65c178;
     --trans-color: #181818;
+    --trans-dur: 0.3s;
 }
 
 /* End Variables */
@@ -189,7 +190,7 @@ header button {
     margin-right: 35px;
     padding: 20px;
     text-transform: capitalize;
-    color: white;
+    color: #8c8c8c;
     background-color: var(--main-colorone , #ed6436);
     border: none;
     border-radius: 5px;
@@ -198,15 +199,16 @@ header button {
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     cursor: pointer;
-    transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
+    transition: var(--trans-dur , 0.3s);
+    -webkit-transition: var(--trans-dur , 0.3s);
+    -moz-transition: var(--trans-dur , 0.3s);
+    -ms-transition: var(--trans-dur , 0.3s);
+    -o-transition: var(--trans-dur , 0.3s);
 }
 
 header button:hover {
     background-color: #e84a15;
+    color: white;
 }
 
 @media (max-width: 991px) {
@@ -239,11 +241,11 @@ header .icon {
     display: flex;
     flex-direction: column;
     cursor: pointer;
-    transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
+    transition: var(--trans-dur , 0.3s);
+    -webkit-transition: var(--trans-dur , 0.3s);
+    -moz-transition: var(--trans-dur , 0.3s);
+    -ms-transition: var(--trans-dur , 0.3s);
+    -o-transition: var(--trans-dur , 0.3s);
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -271,3 +273,150 @@ header .icon span {
 }
 
 /* End Header */
+
+/* Start Landing */
+
+.landing {
+    position: relative;
+}
+
+.landing .image {
+    width: 100%;
+}
+
+.landing .image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 30%);
+}
+
+.landing .image img {
+    width: 100%;
+}
+
+ .landing .content .text {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    -webkit-transform: translate(-50% , -50%);
+    -moz-transform: translate(-50% , -50%);
+    -ms-transform: translate(-50% , -50%);
+    -o-transform: translate(-50% , -50%);
+    text-align: center;
+    color: white;
+}
+
+.landing .content .text h3 {
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+
+@media (max-width: 576px) {
+    .landing .content .text h3 {
+        display: none;
+    }
+}
+
+.landing .content .text h1 {
+    font-size: 68px;
+    margin: 16px;
+}
+
+@media (max-width: 768px) {
+    .landing .content .text h1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    .landing .content .text h1 {
+        margin-bottom: 35px;
+    }
+}
+
+.landing .content .text h5 {
+    font-size: 20px;
+    margin-bottom: 45px;
+}
+
+@media (max-width: 576px) {
+    .landing .content .text h5 {
+        display: none;
+    }
+}
+
+.landing .content .text .links a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 8px 24px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: var(--trans-dur , 0.3s);
+    -webkit-transition: var(--trans-dur , 0.3s);
+    -moz-transition: var(--trans-dur , 0.3s);
+    -ms-transition: var(--trans-dur , 0.3s);
+    -o-transition: var(--trans-dur , 0.3s);
+}
+
+.landing .content .text .links a:first-child {
+    background-color: var(--main-colorone , #ed6436);
+    color: white;
+}
+
+.landing .content .text .links a:first-child:hover {
+    background-color: #e84a15;
+}
+
+.landing .content .text .links a:last-child {
+    background-color: var(--main-colortwo , #65c178);
+    color: black;
+}
+
+.landing .content .text .links a:last-child:hover {
+    background-color: #4ab660;
+} 
+
+.landing .content i {
+    position: absolute;
+    top: 50%;
+    font-size: 35px;
+    color: white;
+    padding: 0 10px;
+    background-color: var(--main-colorone , #e84a15);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: var(--trans-dur , 0.3s);
+    -webkit-transition: var(--trans-dur , 0.3s);
+    -moz-transition: var(--trans-dur , 0.3s);
+    -ms-transition: var(--trans-dur , 0.3s);
+    -o-transition: var(--trans-dur , 0.3s);
+}
+
+.landing .content i:hover {
+    opacity: 1;
+}
+
+.landing .content i:first-of-type {
+    left: 20px;
+}
+
+.landing .content i:last-of-type {
+    right: 20px;
+}
+
+/* End Landing */
