@@ -420,3 +420,187 @@ header .icon span {
 }
 
 /* End Landing */
+
+/* Start Booking */
+
+.book {
+    background-color: #f2f2f4;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 991px) {
+    .book {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.book .re {
+    background-color: var(--main-colorone , #e84a15);
+    padding: 80px 40px;
+    display: flex;
+    align-items: center;
+    flex-basis: 40%;
+
+}
+
+@media (max-width: 991px) {
+    .book .re {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .book .re {
+        width: 80%;
+    }
+}
+
+@media (max-width: 576px) {
+    .book .re {
+        width: 100%;
+        padding: 80px 40px;
+    }
+}
+
+.book .re form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.book .re form input:not(input[type="submit"]), 
+.book .re form select {
+    padding: 10px 30px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: 1px solid white;
+}
+
+.book .re form input:not(input[type="submit"]):hover, 
+.book .re form select:hover {
+    outline: none;
+}
+
+.book .re form input[type="submit"] {
+    font-size: 16px;
+    background-color: #161616;
+    color: white;
+    border: none;
+    padding: 15px 12px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+}
+
+.book .re form input[type="submit"]:hover {
+    background-color: black;
+}
+
+.book .ads {
+    padding: 45px 33px;
+    flex-basis: 50%;
+}
+
+@media (max-width: 991px) {
+    .book .ads {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .book .ads {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .book .ads {
+        padding: 45px 10px;
+    }
+}
+
+.book .ads .title h4 {
+    font-size: 24px;
+    margin-bottom: 16px;
+    color: var(--main-colortwo , #65c178);
+}
+
+.book .ads .title h1 {
+    font-size: 54px;
+    word-spacing: -10px;
+    font-weight: 800;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .book .ads .title h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .book .ads .title h1 {
+        word-spacing: -5px;
+        font-size: 30px;
+    }
+}
+
+.book .ads .title h1 span {
+    color: var(--main-colorone , #ed6436);
+}
+
+.book .ads .title p {
+    color: #777777;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.book .ads .ads-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.book .ads .ads-content .ad {
+    flex-basis: 50%;
+    padding: 20px 20px 20px 0;
+}
+
+@media (max-width: 576px) {
+    .book .ads .ads-content .ad {
+        flex-basis: 100%;
+    }
+}
+
+.book .ads .ads-content .ad .label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.book .ads .ads-content .ad .label img {
+    margin-right: 10px;
+}
+
+.book .ads .ads-content .ad .label h5 {
+    color: #181818;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.book .ads .ads-content .ad p {
+    font-size: 16px;
+    color: #777777;
+}
+
+/* End Booking */
