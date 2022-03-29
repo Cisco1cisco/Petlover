@@ -14,6 +14,32 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
+.container {
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
 /* End Global Rules */
 
 /* Start Variables */
@@ -88,60 +114,63 @@ body {
 /* Start Working Hours */
 
 .work {
-    display: flex;
-    justify-content: space-between;
     padding: 20px;
 }
 
+.work .container {
+    display: flex;
+    justify-content: space-between;
+}
+
 @media (max-width: 991px) {
-    .work {
+    .work .container {
         justify-content: center;
         align-items: center;
     }
 }
 
-.work .logo {
+.work .container .logo {
     font-size: 39px;
     font-weight: 800;
     color: var(--main-colorone , #ed6436);
 }
 
 @media (max-width: 991px) {
-    .work .logo {
+    .work .container .logo {
         display: none;
     }   
 }
 
-.work .logo span {
+.work .container .logo span {
     color: black;
 }
 
-.work .hours {
+.work .container .hours {
     display: flex;
 }
 
-.work .hours .col {
+.work .container .hours .col {
     border-right: 1px solid #dee2e6;
     padding: 0 15px;
     text-align: center;
 }
 
-.work .hours .col:last-of-type {
+.work .container .hours .col:last-of-type {
     border-right: none;
 }
 
-.work .hours .col:nth-child(2) {
+.work .container .hours .col:nth-child(2) {
     margin-top: auto;
     margin-bottom: auto;
 }
 
-.work .hours .col h6 {
+.work .container .hours .col h6 {
     font-size: 16px;
     margin-bottom: 8px;
     color: #181818;
 }
 
-.work .hours .col p {
+.work .container .hours .col p {
     opacity: 0.2;
 }
 
@@ -609,88 +638,80 @@ header .icon span {
 /* Start About */
 
 .about {
-    padding: 100px 79px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.about .container {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 @media (max-width: 991px) {
-    .about {
+    .about .container {
         flex-direction: column;
-        padding: 100px 60px;
     }
 }
 
-@media (max-width: 768px) {
-    .about {
-        padding: 100px 40px;
-    }
-}
-
-.about .text {
-    padding: 10px 40px 10px 0;
+.about .container .text {
+    padding: 40px;
 }
 
 @media (max-width: 991px) {
-    .about .text {
-        margin-bottom: 30px;
+    .about .container .text {
+        padding: 40px 0;
     }
 }
 
-@media (max-width: 768px) {
-    .about .text {
-        padding: 10px;
-    }
-}
-
-.about .text h4 {
+.about .container .text h4 {
     font-size: 24px;
     color: var(--main-colortwo , #65c178);
 }
 
-.about .text h1 {
+.about .container .text h1 {
     font-size: 54px;
     color: var(--main-colorone , #ed6436);
 }
 
 @media (max-width: 991px) {
-    .about .text h1 {
+    .about .container .text h1 {
         font-size: 40px;
     }
 }
 
 @media (max-width: 768px) {
-    .about .text h1 {
+    .about .container .text h1 {
         font-size: 30px;
     }
 }
 
-.about .text h1 span:first-of-type {
+.about .container .text h1 span:first-of-type {
     color: black;
 }
 
-.about .text h1 span:last-of-type {
+.about .container .text h1 span:last-of-type {
     color: var(--main-colortwo , #65c178);
 }
 
-.about .text > h5 {
+.about .container .text > h5 {
     font-size: 20px;
     color: #6c757d;
     margin-bottom: 10px;
 }
 
-.about .text p {
+.about .container .text p {
     color: #777777;
     font-size: 16px;
     line-height: 1.5;
 }
 
-.about .text ul {
+.about .container .text ul {
     list-style: none;
     margin-top: 20px;
 }
 
-.about .text ul h5 {
+.about .container .text ul h5 {
     color: #161616;
     font-size: 20px;
     text-transform: capitalize;
@@ -700,7 +721,7 @@ header .icon span {
     position: relative;
 }
 
-.about .text ul h5::before {
+.about .container .text ul h5::before {
     content: "\f560";
     position: absolute;
     font-family: "Font Awesome 5 Free";
@@ -710,7 +731,7 @@ header .icon span {
     left: -25px;
 }
 
-.about .text a {
+.about .container .text a {
     display: block;
     width: fit-content;
     color: white;
@@ -731,31 +752,31 @@ header .icon span {
     -o-border-radius: 5px;
 }
 
-.about .text a:hover {
+.about .container .text a:hover {
     background-color: #e84a15;
 }
 
-.about .photos > img {
+.about .container .photos > img {
     width: 370px;
 }
 
 @media (max-width: 991px) {
-    .about .photos > img {
+    .about .container .photos > img {
         width: 100%;
     }
 }
 
-.about .photos .tog {
+.about .container .photos .tog {
     display: flex;
     margin-top: -5px;
 }
 
-.about .photos .tog img {
+.about .container .photos .tog img {
     width: 185px;
 }
 
 @media (max-width: 991px) {
-    .about .photos .tog img {
+    .about .container .photos .tog img {
         width: 50%;
     }
 }
