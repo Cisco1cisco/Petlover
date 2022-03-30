@@ -853,3 +853,84 @@ header .icon span {
 }
 
 /* End Services */
+
+/* Start Choose */
+
+.choose .container {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 991px) {
+    .choose .container {
+        flex-direction: column;
+    }
+}
+
+.choose .container img {
+    width: 370px;
+    margin-right: 20px;
+}
+
+@media (max-width: 991px) {
+    .choose .container img {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+.choose .container .choose-text {
+    padding: 40px 35px;
+}
+
+@media (max-width: 768px) {
+    .choose .container .choose-text {
+        padding: 40px 20px;
+    }
+}
+
+.choose .container .choose-text .title {
+    text-align: start;
+}
+
+.choose .container .choose-text p {
+    font-size: 16px;
+    margin-bottom: 24px;
+    color: #777777;
+}
+
+.choose .container .choose-text .features {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.choose .container .choose-text .features .feature {
+    display: flex;
+    flex-basis: 50%;
+    padding: 10px;
+    align-items: center;
+}
+
+@media (max-width: 576px) {
+    .choose .container .choose-text .features .feature {
+        padding: 3px;
+        margin-bottom: 10px;
+    }
+}
+
+.choose .container .choose-text .features .feature img {
+    width: 40px;
+}
+
+@media (max-width: 991px) {
+    .choose .container .choose-text .features .feature img {
+        margin: 0 10px 0 0;
+    }
+}
+
+.choose .container .choose-text .features .feature h5 {
+    font-size: 20px;
+    color: #181818;
+}
+
+/* End Choose */
