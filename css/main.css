@@ -1100,3 +1100,125 @@ header .icon span {
 
 
 /* End Pricing */
+
+/* Start Team */
+
+.team {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.team .container .team-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.team .container .team-content .card {
+    flex-basis: calc((100% / 4) - 30px);
+    background-color: #f2f2f4;
+    text-align: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+@media (max-width: 991px) {
+    .team .container .team-content .card {
+        flex-basis: calc((100% / 2) - 30px);
+    }
+}
+
+@media (max-width: 768px) {
+    .team .container .team-content .card {
+        flex-basis: 75%;
+    }
+}
+
+.team .container .team-content .card img {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: relative;
+    z-index: 2;
+}
+
+.team .container .team-content .card .name {
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.team .container .team-content .card:hover .name {
+    bottom: 70px;
+}
+
+.team .container .team-content .card .name h5 {
+    font-size: 20px;
+    color: #181818;
+    margin-bottom: 10px;
+}
+
+.team .container .team-content .card .name span {
+    display: block;
+    font-size: 16px;
+    color: #777777;
+    font-style: italic;
+}
+
+.team .container .team-content .card .socials {
+    background-color: #181818;
+    padding: 25px 5px;
+    margin-top: -5px;
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    width: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.team .container .team-content .card:hover .socials {
+    bottom: 5px;
+}
+
+.team .container .team-content .card .socials i {
+    color: var(--main-colorone , #ed6436);
+    margin-right: 5px;
+    border: 1px solid var(--main-colorone , #ed6436);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    padding: 7px 10px;
+    transition: var(--trans-dur , 0.3s);
+    -webkit-transition: var(--trans-dur , 0.3s);
+    -moz-transition: var(--trans-dur , 0.3s);
+    -ms-transition: var(--trans-dur , 0.3s);
+    -o-transition: var(--trans-dur , 0.3s);
+    cursor: pointer;
+}
+
+.team .container .team-content .card .socials i:hover {
+    background-color: var(--main-colorone , #ed6436);
+    color: white;
+}
+
+/* End Team */
