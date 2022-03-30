@@ -54,6 +54,33 @@ body {
 /* End Variables */
 
 /* Start Components */
+
+.title {
+    text-align: center;
+}
+
+.title h4 {
+    color: var(--main-colortwo , #65c178);
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.title h1 {
+    font-size: 54px;
+    color: var(--main-colorone , #ed6436);
+}
+
+@media (max-width: 768px) {
+    .title h1 {
+        font-size: 40px;
+    }
+}
+
+.title h1 span {
+    color: #181818;
+    font-weight: 800;
+}
+
 /* End Components */
 
 /* Start Top bar */
@@ -558,38 +585,11 @@ header .icon span {
     }
 }
 
-.book .ads .title h4 {
-    font-size: 24px;
-    margin-bottom: 16px;
-    color: var(--main-colortwo , #65c178);
+.book .ads .title {
+    text-align: start;
 }
 
-.book .ads .title h1 {
-    font-size: 54px;
-    word-spacing: -10px;
-    font-weight: 800;
-    margin-bottom: 25px;
-    margin-top: 10px;
-}
-
-@media (max-width: 768px) {
-    .book .ads .title h1 {
-        font-size: 40px;
-    }
-}
-
-@media (max-width: 576px) {
-    .book .ads .title h1 {
-        word-spacing: -5px;
-        font-size: 30px;
-    }
-}
-
-.book .ads .title h1 span {
-    color: var(--main-colorone , #ed6436);
-}
-
-.book .ads .title p {
+.book .ads p {
     color: #777777;
     font-size: 16px;
     margin-bottom: 16px;
@@ -782,3 +782,74 @@ header .icon span {
 }
 
 /* End About */
+
+/* Start Services */
+
+.services {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: #f2f2f4;
+}
+
+.services .container .services-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.services .container .services-content .service {
+    flex-basis: calc((100% / 3) - 30px );
+    text-align: center;
+    padding: 75px 40px;
+    background-color: white;
+}
+
+@media (max-width: 991px) {
+    .services .container .services-content .service {
+        flex-basis: calc((100% / 2) - 30px);
+    }
+}
+
+@media (max-width: 768px) {
+    .services .container .services-content .service {
+        flex-basis: 90%;
+    }
+}
+
+.services .container .services-content .service img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.services .container .services-content .service h3 {
+    font-size: 28px;
+    color: #181818;
+    margin-bottom: 10px;
+}
+
+.services .container .services-content .service p {
+    font-size: 16px;
+    color: #777777;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.services .container .services-content .service a {
+    color: var(--main-colorone , #ed6436);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: var(--trans-dur , 0.3s);
+    -webkit-transition: var(--trans-dur , 0.3s);
+    -moz-transition: var(--trans-dur , 0.3s);
+    -ms-transition: var(--trans-dur , 0.3s);
+    -o-transition: var(--trans-dur , 0.3s);
+}
+
+.services .container .services-content .service a:hover {
+    color: #e84a15;
+    text-decoration: underline;
+}
+
+/* End Services */
