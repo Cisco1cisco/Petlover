@@ -934,3 +934,169 @@ header .icon span {
 }
 
 /* End Choose */
+
+/* Start Pricing */
+
+.pricing {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #f2f2f4;
+}
+
+.pricing .container .plans {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.pricing .container .plans .plan {
+    flex-basis: calc((100% / 3) - 30px);
+    background-color: white;
+}
+
+@media (max-width: 991px) {
+    .pricing .container .plans .plan {
+        flex-basis: 90%;
+    }
+}
+
+.pricing .container .plans .plan .image {
+    position: relative;
+    height: fit-content;
+}
+
+.pricing .container .plans .plan .image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 5px);
+    background-color: rgb(0 0 0 / 50%);
+}
+
+.pricing .container .plans .plan .image img {
+    width: 100%;
+}
+
+.pricing .container .plans .plan .image .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    -webkit-transform: translate(-50% , -50%);
+    -moz-transform: translate(-50% , -50%);
+    -ms-transform: translate(-50% , -50%);
+    -o-transform: translate(-50% , -50%);
+    text-align: center;
+}
+
+.pricing .container .plans .plan .image .text h3 {
+    font-size: 28px;
+    color: var(--main-colorone , #ed6436);
+}
+
+.pricing .container .plans .plan .image .text h3.sp {
+    color: var(--main-colortwo , #65c178);
+}
+
+.pricing .container .plans .plan .image .text h1 {
+    font-size: 52px;
+    color: white;
+    position: relative;
+}
+
+.pricing .container .plans .plan .image .text h1::before {
+    content: "$";
+    position: absolute;
+    font-size: 22px;
+    top: 0;
+    left: 0;
+}
+
+.pricing .container .plans .plan:nth-of-type(2) .image .text h1::before {
+    left: 15px;
+}
+
+.pricing .container .plans .plan .image .text h1::after {
+    content: "/Mo";
+    position: absolute;
+    font-size: 16px;
+    bottom: 10px;
+    right: -25px;
+}
+
+.pricing .container .plans .plan:nth-last-child(2) .image .text h1::after {
+    right: 0;
+}
+
+.pricing .container .plans .plan:nth-of-type(3) .image .text h1::after {
+    right: -15px;
+}
+
+.pricing .container .plans .plan ul {
+    list-style: none;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pricing .container .plans .plan ul li {
+    padding: 8px;
+    font-size: 16px;
+    color: #777777;
+}
+
+.pricing .container .plans .plan ul li span {
+    position: relative;
+}
+
+.pricing .container .plans .plan ul li span::before {
+    content: "\f00c";
+    position: absolute;
+    left: -20px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: var(--main-colortwo , #65c178);
+}
+
+.pricing .container .plans .plan ul li span.w::before {
+    content: "\f00d";
+    color: red;
+}
+
+.pricing .container .plans .plan ul li:not(li:last-of-type) {
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.pricing .container .plans .plan a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    background-color: var(--main-colorone , #ed6436);
+    margin-top: 20px;
+    transition: var(--trans-dur , 0.3s);
+    -webkit-transition: var(--trans-dur , 0.3s);
+    -moz-transition: var(--trans-dur , 0.3s);
+    -ms-transition: var(--trans-dur , 0.3s);
+    -o-transition: var(--trans-dur , 0.3s);
+}
+
+.pricing .container .plans .plan a:hover {
+    background-color: #e84a15;
+}
+
+.pricing .container .plans .plan a.sp {
+    background-color: var(--main-colortwo , #65c178);
+    color: black;
+}
+
+.pricing .container .plans .plan a.sp:hover {
+    background-color: #4ab660;
+    color: white;
+}
+
+
+/* End Pricing */
