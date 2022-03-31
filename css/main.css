@@ -1380,7 +1380,7 @@ header .icon span {
 
 .contact {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 90px;
     background-color: #181818;
     padding-right: 25px;
     padding-left: 25px;
@@ -1505,6 +1505,7 @@ header .icon span {
     margin-left: 15px;
     display: block;
     position: relative;
+    width: fit-content;
 }
 
 .contact .lists .list.pop li a::before {
@@ -1547,3 +1548,52 @@ header .icon span {
 }
 
 /* End Contact */
+
+/* Start Footer */
+
+footer {
+    background-color: #111111;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+footer p {
+    color: white;
+    flex-basis: 50%;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    footer p {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+footer p span {
+    font-weight: bold;
+}
+
+footer .links a {
+    text-decoration: none;
+    color: white;
+    margin-right: 45px;
+    text-transform: capitalize;
+}
+
+@media (max-width: 991px) {
+    footer .links a {
+        margin-right: 25px;
+    }
+}
+
+/* End Footer */
