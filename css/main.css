@@ -48,6 +48,8 @@ body {
     --main-colorone: #ed6436;
     --main-colortwo: #65c178;
     --trans-color: #181818;
+    --sub-color: #777777;
+    --sc-color: #f2f2f4;
     --trans-dur: 0.3s;
 }
 
@@ -77,7 +79,7 @@ body {
 }
 
 .title h1 span {
-    color: #181818;
+    color: var(--trans-color, #181818);
     font-weight: 800;
 }
 
@@ -194,7 +196,7 @@ body {
 .work .container .hours .col h6 {
     font-size: 16px;
     margin-bottom: 8px;
-    color: #181818;
+    color: var(--trans-color, #181818);
 }
 
 .work .container .hours .col p {
@@ -230,7 +232,7 @@ header ul li a {
     font-size: 18px;
     text-transform: capitalize;
     text-decoration: none;
-    color: #F2F2F4;
+    color: var(--sc-color, #f2f2f4);
 }
 
 header ul li a:hover {
@@ -480,7 +482,7 @@ header .icon span {
 /* Start Booking */
 
 .book {
-    background-color: #f2f2f4;
+    background-color: var(--sc-color, #f2f2f4);
     padding: 0 15px;
     display: flex;
     justify-content: center;
@@ -590,7 +592,7 @@ header .icon span {
 }
 
 .book .ads p {
-    color: #777777;
+    color: var(--sub-color, #777777);
     font-size: 16px;
     margin-bottom: 16px;
 }
@@ -623,14 +625,14 @@ header .icon span {
 }
 
 .book .ads .ads-content .ad .label h5 {
-    color: #181818;
+    color: var(--trans-color, #181818);
     font-size: 20px;
     font-weight: 600;
 }
 
 .book .ads .ads-content .ad p {
     font-size: 16px;
-    color: #777777;
+    color: var(--sub-color, #777777);
 }
 
 /* End Booking */
@@ -701,7 +703,7 @@ header .icon span {
 }
 
 .about .container .text p {
-    color: #777777;
+    color: var(--sub-color, #777777);
     font-size: 16px;
     line-height: 1.5;
 }
@@ -788,7 +790,7 @@ header .icon span {
 .services {
     padding-top: 70px;
     padding-bottom: 70px;
-    background-color: #f2f2f4;
+    background-color: var(--sc-color, #f2f2f4);
 }
 
 .services .container .services-content {
@@ -824,13 +826,13 @@ header .icon span {
 
 .services .container .services-content .service h3 {
     font-size: 28px;
-    color: #181818;
+    color: var(--trans-color, #181818);
     margin-bottom: 10px;
 }
 
 .services .container .services-content .service p {
     font-size: 16px;
-    color: #777777;
+    color: var(--sub-color, #777777);
     line-height: 1.8;
     margin-bottom: 10px;
 }
@@ -896,7 +898,7 @@ header .icon span {
 .choose .container .choose-text p {
     font-size: 16px;
     margin-bottom: 24px;
-    color: #777777;
+    color: var(--sub-color, #777777);
 }
 
 .choose .container .choose-text .features {
@@ -930,7 +932,7 @@ header .icon span {
 
 .choose .container .choose-text .features .feature h5 {
     font-size: 20px;
-    color: #181818;
+    color: var(--trans-color, #181818);
 }
 
 /* End Choose */
@@ -940,7 +942,7 @@ header .icon span {
 .pricing {
     padding-top: 100px;
     padding-bottom: 100px;
-    background-color: #f2f2f4;
+    background-color: var(--sc-color, #f2f2f4);
 }
 
 .pricing .container .plans {
@@ -1044,7 +1046,7 @@ header .icon span {
 .pricing .container .plans .plan ul li {
     padding: 8px;
     font-size: 16px;
-    color: #777777;
+    color: var(--sub-color, #777777);
 }
 
 .pricing .container .plans .plan ul li span {
@@ -1117,7 +1119,7 @@ header .icon span {
 
 .team .container .team-content .card {
     flex-basis: calc((100% / 4) - 30px);
-    background-color: #f2f2f4;
+    background-color: var(--sc-color, #f2f2f4);
     text-align: center;
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -1166,19 +1168,19 @@ header .icon span {
 
 .team .container .team-content .card .name h5 {
     font-size: 20px;
-    color: #181818;
+    color: var(--trans-color, #181818);
     margin-bottom: 10px;
 }
 
 .team .container .team-content .card .name span {
     display: block;
     font-size: 16px;
-    color: #777777;
+    color: var(--sub-color, #777777);
     font-style: italic;
 }
 
 .team .container .team-content .card .socials {
-    background-color: #181818;
+    background-color: var(--trans-color, #181818);
     padding: 25px 5px;
     margin-top: -5px;
     position: absolute;
@@ -1228,7 +1230,7 @@ header .icon span {
 .testimonial {
     padding-top: 50px;
     padding-bottom: 50px;
-    background-color: #f2f2f4;
+    background-color: var(--sc-color, #f2f2f4);
 }
 
 .testimonial .container .test-content {
@@ -1277,11 +1279,11 @@ header .icon span {
 .testimonial .container .test-content .client .name span {
     display: block;
     font-size: 16px;
-    color: #777777;
+    color: var(--sub-color, #777777);
 }
 
 .testimonial .container .test-content .client p {
-    color: #777777;
+    color: var(--sub-color, #777777);
     line-height: 1.5;
     text-align: start;
 }
@@ -1326,7 +1328,7 @@ header .icon span {
 
 .blog .container .blog-content .card {
     flex-basis: calc((100% / 3) - 20px);
-    background-color: #f2f2f4;
+    background-color: var(--sc-color, #f2f2f4);
     margin-bottom: 25px;
 }
 
@@ -1346,17 +1348,17 @@ header .icon span {
 
 .blog .container .blog-content .card .text h4 {
     font-size: 20px;
-    color: #181818;
+    color: var(--trans-color, #181818);
 }
 
 .blog .container .blog-content .card .text .icons {
-    color: #777777;
+    color: var(--sub-color, #777777);
     margin-top: 10px;
 }
 
 .blog .container .blog-content .card .text p {
     font-size: 16px;
-    color: #777777;
+    color: var(--sub-color, #777777);
     margin-top: 20px;
 }
 
@@ -1381,7 +1383,7 @@ header .icon span {
 .contact {
     padding-top: 30px;
     padding-bottom: 90px;
-    background-color: #181818;
+    background-color: var(--trans-color, #181818);
     padding-right: 25px;
     padding-left: 25px;
     display: flex;
@@ -1492,7 +1494,7 @@ header .icon span {
 }
 
 .contact .lists .socials i:hover {
-    color: #181818;
+    color: var(--trans-color, #181818);
     background-color: white;
 }
 
@@ -1597,3 +1599,47 @@ footer .links a {
 }
 
 /* End Footer */
+
+/* Start Scroll */
+
+a.scroll {
+    position: fixed;
+    display: block;
+    bottom: 40px;
+    right: 30px;
+    background-color: var(--main-colorone, #ed6436);
+    padding: 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: var(--trans-dur, 0.3s);
+    -webkit-transition: var(--trans-dur, 0.3s);
+    -moz-transition: var(--trans-dur, 0.3s);
+    -ms-transition: var(--trans-dur, 0.3s);
+    -o-transition: var(--trans-dur, 0.3s);
+    animation: scroll 1s linear alternate infinite;
+    -webkit-animation: scroll 1s linear alternate infinite;
+}
+
+a.scroll:hover {
+    background-color: #e84a15;
+}
+
+@keyframes scroll {
+    from {
+        bottom: 40px;
+    }
+
+    to {
+        bottom: 60px;
+    }
+}
+
+a.scroll i {
+    font-weight: 900;
+    color: white;
+}
+
+/* End Scroll */
