@@ -1636,6 +1636,7 @@ a.scroll {
     -o-transition: var(--trans-dur, 0.3s);
     animation: scroll 1s linear alternate infinite;
     -webkit-animation: scroll 1s linear alternate infinite;
+    z-index: 99;
 }
 
 a.scroll:hover {
