@@ -1310,3 +1310,68 @@ header .icon span {
 }
 
 /* End Testimonial */
+
+/* Start Blog */
+
+.blog {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.blog .container .blog-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.blog .container .blog-content .card {
+    flex-basis: calc((100% / 3) - 20px);
+    background-color: #f2f2f4;
+    margin-bottom: 25px;
+}
+
+@media (max-width: 991px) {
+    .blog .container .blog-content .card {
+        flex-basis: 100%;
+    }
+}
+
+.blog .container .blog-content .card img {
+    width: 100%;
+}
+
+.blog .container .blog-content .card .text {
+    padding: 30px;
+}
+
+.blog .container .blog-content .card .text h4 {
+    font-size: 20px;
+    color: #181818;
+}
+
+.blog .container .blog-content .card .text .icons {
+    color: #777777;
+    margin-top: 10px;
+}
+
+.blog .container .blog-content .card .text p {
+    font-size: 16px;
+    color: #777777;
+    margin-top: 20px;
+}
+
+.blog .container .blog-content .card .text a {
+    display: block;
+    color: var(--main-colorone, #ed6436);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.blog .container .blog-content .card .text a:hover {
+    color: #e84a15;
+    text-decoration: underline;
+}
+
+/* End Blog */
