@@ -1384,9 +1384,96 @@ header .icon span {
 
 /* End Blog */
 
+
 /* Start Contact */
 
 .contact {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.contact .container .form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media (max-width: 576px) {
+    .contact .container .form {
+        width: 100%;
+    }
+}
+
+.contact .container .form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .container .form form input,
+.contact .container .form form textarea {
+    border: 1px solid #ced4da;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.contact .container .form form input:focus,
+.contact .container .form form textarea:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #f7beab;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(237 100 54 / 25%);
+}
+
+
+.contact .container .form form textarea {
+    padding-top: 40px;
+    height: 200px;
+    resize: none;
+}
+
+.contact .container .form form button {
+    width: fit-content;
+    cursor: pointer;
+    padding: 20px 40px;
+    text-transform: capitalize;
+    border: none;
+    background-color: var(--main-colorone, #ed6436);
+    color: white;
+    transition: var(--trans-dur, 0.3s);
+    -webkit-transition: var(--trans-dur, 0.3s);
+    -moz-transition: var(--trans-dur, 0.3s);
+    -ms-transition: var(--trans-dur, 0.3s);
+    -o-transition: var(--trans-dur, 0.3s);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.contact .container .form form button:hover {
+    background-color: #e84a15;
+    border-color: #dc4614;
+}
+
+/* End Contact */
+
+/* Start Map */
+
+.map iframe {
+    width: 100%;
+}
+
+/* End Map */
+
+/* Start Info */
+
+.info {
     padding-top: 30px;
     padding-bottom: 90px;
     background-color: var(--trans-color, #181818);
@@ -1397,37 +1484,37 @@ header .icon span {
 }
 
 @media (max-width: 991px) {
-    .contact {
+    .info {
         flex-direction: column;
     }
 }
 
-.contact .main {
+.info .main {
     flex-basis: 30%;
 }
 
 @media (max-width: 991px) {
-    .contact .main {
+    .info .main {
         flex-basis: 100%;
     }
 }
 
-.contact .main h1 {
+.info .main h1 {
     color: var(--main-colorone, #ed6436);
     font-size: 40px;
     word-spacing: -8px;
 }
 
-.contact .main p {
+.info .main p {
     color: white;
     line-height: 1.5;
 }
 
-.contact .main h1 span {
+.info .main h1 span {
     color: white;
 }
 
-.contact .lists {
+.info .lists {
     flex-basis: 69%;
     display: flex;
     justify-content: space-between;
@@ -1435,58 +1522,58 @@ header .icon span {
 }
 
 @media (max-width: 991px) {
-    .contact .lists {
+    .info .lists {
         flex-basis: calc((100% / 3) - 20px);
     }
 }
 
 @media (max-width: 768px) {
-    .contact .lists {
+    .info .lists {
         flex-direction: column;
     }
 }
 
-.contact .lists .list {
+.info .lists .list {
     padding: 10px 10px;
     flex-basis: 35%;
 }
 
-.contact .lists .list h5 {
+.info .lists .list h5 {
     color: var(--main-colorone, #ed6436);
     font-size: 20px;
     margin-bottom: 25px;
 }
 
-.contact .lists ul {
+.info .lists ul {
     list-style: none;
 }
 
-.contact .lists .list ul li {
+.info .lists .list ul li {
     margin-bottom: 20px;
 }
 
 
-.contact .lists .list ul li i {
+.info .lists .list ul li i {
     margin-right: 5px;
 }
 
-.contact .lists .list ul li,
-.contact .lists .list ul li a {
+.info .lists .list ul li,
+.info .lists .list ul li a {
     color: white;
     text-decoration: none;
     line-height: 1.5;
 }
 
-.contact .lists .list ul li a:hover {
+.info .lists .list ul li a:hover {
     text-decoration: underline;
 }
 
-.contact .lists .socials {
+.info .lists .socials {
     display: flex;
 }
 
 
-.contact .lists .socials .icon {
+.info .lists .socials .icon {
     color: white;
     border: 1px solid white;
     margin-right: 10px;
@@ -1508,16 +1595,16 @@ header .icon span {
     align-items: center;
 }
 
-.contact .lists .socials .icon:hover {
+.info .lists .socials .icon:hover {
     color: var(--trans-color, #181818);
     background-color: white;
 }
 
-.contact .lists .list.pop li {
+.info .lists .list.pop li {
     margin-bottom: 10px;
 }
 
-.contact .lists .list.pop li a {
+.info .lists .list.pop li a {
     text-transform: capitalize;
     margin-left: 15px;
     display: block;
@@ -1525,7 +1612,7 @@ header .icon span {
     width: fit-content;
 }
 
-.contact .lists .list.pop li a::before {
+.info .lists .list.pop li a::before {
     content: "\f105";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
@@ -1533,7 +1620,7 @@ header .icon span {
     left: -15px;
 }
 
-.contact .lists .list.form input {
+.info .lists .list.form input {
     margin-bottom: 15px;
     width: 100%;
     padding: 10px;
@@ -1545,11 +1632,11 @@ header .icon span {
     border: none;
 }
 
-.contact .lists .list.form input:not(input[type="submit"]) {
+.info .lists .list.form input:not(input[type="submit"]) {
     outline: none;
 }
 
-.contact .lists .list.form input[type="submit"] {
+.info .lists .list.form input[type="submit"] {
     background-color: var(--main-colorone, #ed6436);
     color: white;
     cursor: pointer;
@@ -1560,11 +1647,11 @@ header .icon span {
     -o-transition: var(--trans-dur, 0.3s);
 }
 
-.contact .lists .list.form input[type="submit"]:hover {
+.info .lists .list.form input[type="submit"]:hover {
     background-color: #e84a15;
 }
 
-/* End Contact */
+/* End Info */
 
 /* Start Footer */
 
